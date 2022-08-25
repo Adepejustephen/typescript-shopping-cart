@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { BsCartFill } from "react-icons/bs";
 import "./header.css";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 export const Header = () => {
+  const { openCart, cartQuantity} = useShoppingCart()
   return (
     <header className="header">
       <div className="header__container">
@@ -33,7 +35,7 @@ export const Header = () => {
         </nav>
         <div className="header__cart">
           <div className="header__cart--overlay">
-            <span>4</span>
+            <span>{ cartQuantity}</span>
           </div>
           <BsCartFill />
         </div>

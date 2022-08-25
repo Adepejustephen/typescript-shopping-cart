@@ -77,7 +77,7 @@ export const items: StoreItemsProps[] = [
         image: ShirtJeans,
   } , 
     {
-        id: 2355,
+        id: 2356,
         name: 'Alex Sandra heels and bag',
         price: 40,
         image: CreamBag,
