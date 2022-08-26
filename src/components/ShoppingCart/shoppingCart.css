@@ -10,6 +10,11 @@
 
 }
 
+.cart__close--btn {
+    cursor: pointer;
+    color: #3b9f27;
+}
+
 @keyframes openCart {
     0%{
 transform: translateX(100vw);
