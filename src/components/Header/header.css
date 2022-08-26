@@ -120,4 +120,18 @@ font-weight: 700;
   }
 }
 
+@media screen and (max-width: 1200px) {
+   .header__container {
+   
+    width: 90%;
+   
+} 
+}
+
+@media screen and (max-width: 1200px) {
+   .nav {
+  display: none;
+}
+}
+
 

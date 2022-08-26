@@ -1,8 +1,8 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
-import { Home, Store } from './pages';
+import { Home } from './pages';
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/store" element={<Store />} />
+             <Route  path="/store" element={<Navigate to="/" />} />
+             <Route  path="/about" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </ShoppingCartProvider>

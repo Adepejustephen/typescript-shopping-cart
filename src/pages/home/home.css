@@ -9,5 +9,30 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     width: 80%;
-    margin: 4rem auto;
+    margin: 5rem auto;
+}
+
+@media screen and (max-width: 1200px) {
+   .store__container {
+   
+    width: 90%;
+   
+} 
+
+}
+@media screen and (max-width: 800px) {
+   .store__container {
+  
+    grid-template-columns: repeat(2, 1fr);
+   
+    
+} 
+}
+@media screen and (max-width: 600px) {
+   .store__container {
+  
+    grid-template-columns:  1fr;
+   
+    
+} 
 }
