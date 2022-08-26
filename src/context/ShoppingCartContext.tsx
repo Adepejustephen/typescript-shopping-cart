@@ -91,11 +91,10 @@ export const ShoppingCartProvider = ({ children }: ProviderProps) => {
         closeCart,
         cartItems,
         cartQuantity,
-
       }}
     >
       {children}
-      <ShoppingCart/>
+      {isOpen && <ShoppingCart />}
     </ShoppingCartContext.Provider>
   );
     

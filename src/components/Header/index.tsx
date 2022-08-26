@@ -33,7 +33,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="header__cart">
+        <div className="header__cart" onClick={openCart}>
           <div className="header__cart--overlay">
             <span>{ cartQuantity}</span>
           </div>
